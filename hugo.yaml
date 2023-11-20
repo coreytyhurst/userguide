@@ -20,7 +20,7 @@ languages:
     languageCode: en-US
     contentDir: content/en
     title: Server User Guide
-    description: This is here so you don't have to call your admin!
+    description: Click "Get Started" Above!
     weight: 1
 
 params:
@@ -75,14 +75,14 @@ params:
 menu:
   main:
 
-    - url: /
+    - url: "https://home.tyhurstfarmhouse.com"
       name: Home
       identifier: home
       pre: "<i class='icon icon-home'></i>"
       weight: 1
 
     - url: /docs
-      name: Documentation
+      name: Get Started
       identifier: docs
       pre: "<i class='icon icon-book'></i>"
       weight: 2
