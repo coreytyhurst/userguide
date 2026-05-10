@@ -1,0 +1,79 @@
+:root {
+  --body-background: #E8E1D0;
+  --body-font-color: #1B1A16;
+  --color-link: #2F7B7B;
+  --color-visited-link: #1F5959;
+}
+
+html {
+  background: #E8E1D0;
+}
+
+h1, h2, h3, h4 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #1B1A16;
+}
+
+.book-brand img {
+  border-radius: 8px;
+}
+
+.book-menu {
+  background: #E8E1D0;
+  nav {
+    a {
+      color: #2C2A24;
+    }
+    a.active {
+      color: #2F7B7B;
+    }
+    a:hover {
+      color: #2F7B7B;
+    }
+  }
+}
+
+.markdown {
+  a {
+    color: #2F7B7B;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    &:hover {
+      color: #1F5959;
+    }
+  }
+
+  table th {
+    background-color: #D4CDBB;
+    color: #1B1A16;
+  }
+
+  blockquote {
+    border-left: 4px solid #2F7B7B;
+    background: #D4CDBB;
+    padding: 0.5em 1em;
+  }
+
+  hr {
+    border-color: #B8AE9A;
+  }
+}
+
+.book-header {
+  border-bottom: 1px solid #B8AE9A;
+}
+
+.book-menu {
+  border-right: 1px solid #B8AE9A;
+}
+
+.book-hint.info {
+  border-color: #2F7B7B;
+  background: #E8E1D0;
+}
+
+.book-search input {
+  background: #D4CDBB;
+  border-color: #B8AE9A;
+  color: #1B1A16;
+}

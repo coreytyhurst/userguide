@@ -1,88 +1,32 @@
-theme: docura
+baseURL: https://guide.tyhurstfarmhouse.com/
+title: Tyhurst Farmhouse Guide
+theme: hugo-book
 
+copyright: "Tyhurst Farmhouse"
+
+disablePathToLower: true
 enableGitInfo: false
 
 markup:
-  highlight:
-    noClasses: false
   goldmark:
     renderer:
       unsafe: true
-
-services:
-  googleAnalytics:
-    ID: G-xxxxxxxxxx
-
-defaultContentLanguage: en
-languages:
-  en:
-    languageName: English
-    languageCode: en-US
-    contentDir: content/en
-    title: Server User Guide
-    description: Click "Get Started" Above!
-    weight: 1
+  tableOfContents:
+    startLevel: 2
 
 params:
-
-  author:
-    name: farmhouseadmin
-    url: https://home.tyhurstfarmhouse.com
-
-  themeColors:
-    light: '#ffffff'
-    dark: '#121212'
-
-  years:
-    start: ''
-    present: 2023
-
-  social:
-    github: 'coreytyhurst/userguide'
-    youtube: ''
-    facebook: ''
-    x: ''
-
-  ads:
-    googleAdSense: ''
-
-  donate:
-    buyMeACoffee: 'farmhouseadmin'
-    githubSponsor: ''
-
-  algolia:
-    en:
-      container: '#site-header-search'
-      appId: ''
-      indexName: ''
-      apiKey: ''
-
-  home:
-
-    repository: 'coreytyhurst/userguide'
-
-#    repositories:
-#      - name: Website
-#        repo: org/site
-#        icon: "<i class='icon icon-book'></i>"
-#        description: The repository of the website
-#
-#      - name: Code
-#        repo: org/project
-#        icon: "<i class='icon icon-book'></i>"
-#        description: The repository of the project
+  BookTheme: auto
+  BookToC: false
+  BookSection: docs
+  BookLogo: /favicon.png
+  BookMenuBundle: /menu
+  BookSearch: true
+  description: Your guide to everything on the Farmhouse server.
+  images:
+    - /og-image.png
 
 menu:
-  main:
-
-    - url: "https://home.tyhurstfarmhouse.com"
-      name: Home
-      identifier: home
-      pre: "<i class='icon icon-home'></i>"
+  before:
+    - name: "Dashboard"
+      url: "https://home.tyhurstfarmhouse.com"
       weight: 1
-
-    - url: /docs
-      name: Get Started
-      identifier: docs
-      pre: "<i class='icon icon-book'></i>"
-      weight: 2
