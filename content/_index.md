@@ -7,9 +7,13 @@ type: docs
 
 Your guide to all the apps and services on the Farmhouse server.
 
+<div class="tf-quick-links">
+
 **[Dashboard](https://home.tyhurstfarmhouse.com)** -- Jump straight to the app launcher.
 
 **[Announcements]({{< relref "/docs/announcements" >}})** -- Latest updates and service news.
+
+</div>
 
 ---
 

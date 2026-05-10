@@ -30,3 +30,6 @@ menu:
     - name: "Dashboard"
       url: "https://home.tyhurstfarmhouse.com"
       weight: 1
+    - name: "Announcements"
+      url: "/docs/announcements/"
+      weight: 2

@@ -1,6 +1,7 @@
 ---
 title: "Announcements"
 weight: 1
+bookHidden: true
 ---
 
 # Announcements

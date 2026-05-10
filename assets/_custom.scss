@@ -1,79 +1,341 @@
+// Tyhurst Farmhouse Design System — Hugo Book override
+// Tokens from design-system-farmhouse-README.md
+
+// ── Raw tokens ──────────────────────────────────────────
 :root {
-  --body-background: #E8E1D0;
-  --body-font-color: #1B1A16;
-  --color-link: #2F7B7B;
-  --color-visited-link: #1F5959;
+  --tf-bone:            #FBF7EC;
+  --tf-parchment:       #F2EAD8;
+  --tf-parchment-deep:  #EADFC4;
+  --tf-cream:           #E8DEC6;
+  --tf-ink:             #1B1A16;
+  --tf-ink-soft:        #2C2A24;
+  --tf-barnwood:        #3D4148;
+  --tf-saddle:          #8A6B47;
+  --tf-saddle-light:    #B89274;
+  --tf-stone:           #B8AE9A;
+  --tf-stone-light:     #D4CDBB;
+  --tf-moss:            #4A5D43;
+  --tf-sage:            #9DAE8A;
+  --tf-fern:            #6B7F5C;
+  --tf-pond:            #2F7B7B;
+  --tf-pond-deep:       #1F5959;
+  --tf-pond-mist:       #B6CFCE;
+  --tf-brick:           #9C3B2C;
+  --tf-brick-deep:      #7A2A1F;
+  --tf-goldenrod:       #C99548;
+  --tf-goldenrod-soft:  #E0BE85;
+
+  // Ink opacity ramp
+  --tf-ink-100: #{rgba(#1B1A16, 1)};
+  --tf-ink-72:  #{rgba(#1B1A16, 0.72)};
+  --tf-ink-56:  #{rgba(#1B1A16, 0.56)};
+  --tf-ink-40:  #{rgba(#1B1A16, 0.40)};
+  --tf-ink-24:  #{rgba(#1B1A16, 0.24)};
+  --tf-ink-12:  #{rgba(#1B1A16, 0.12)};
+  --tf-ink-06:  #{rgba(#1B1A16, 0.06)};
+
+  // Semantic aliases
+  --bg:          var(--tf-parchment);
+  --bg-raised:   var(--tf-cream);
+  --bg-hero:     var(--tf-bone);
+  --bg-inverse:  var(--tf-ink);
+  --fg:          var(--tf-ink);
+  --fg-soft:     var(--tf-ink-72);
+  --fg-muted:    var(--tf-ink-56);
+  --fg-quiet:    var(--tf-ink-40);
+  --fg-inverse:  var(--tf-bone);
+  --rule:        var(--tf-ink);
+  --rule-soft:   var(--tf-ink-24);
+  --rule-faint:  var(--tf-ink-12);
+  --accent:      var(--tf-pond);
+  --accent-deep: var(--tf-pond-deep);
+  --accent-warm: var(--tf-brick);
+  --accent-leaf: var(--tf-moss);
+  --accent-sun:  var(--tf-goldenrod);
+
+  // Fonts
+  --font-display: 'IM Fell English SC', serif;
+  --font-body:    'Lora', Georgia, serif;
+  --font-sans:    'Source Sans 3', system-ui, sans-serif;
+
+  // Spacing (base 4px)
+  --s-1: 4px;  --s-2: 8px;  --s-3: 12px; --s-4: 16px;
+  --s-5: 24px; --s-6: 32px; --s-7: 48px; --s-8: 64px;
+
+  // Radii — square is the rule
+  --r-0: 0;
+  --r-1: 2px;
+  --r-2: 4px;
+
+  // Hugo Book overrides
+  --body-background: var(--bg);
+  --body-font-color: var(--fg);
+  --color-link: var(--tf-moss);
+  --color-visited-link: var(--tf-fern);
+  --border-radius: var(--r-1);
 }
 
+// ── Global ──────────────────────────────────────────────
 html {
-  background: #E8E1D0;
+  background: var(--bg);
 }
 
-h1, h2, h3, h4 {
-  font-family: Georgia, "Times New Roman", serif;
-  color: #1B1A16;
+body {
+  font-family: var(--font-body);
+  color: var(--fg);
+  -webkit-font-smoothing: antialiased;
 }
 
+// ── Headings — IM Fell English SC ───────────────────────
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--fg);
+  font-weight: 400;
+}
+
+// ── Sidebar ─────────────────────────────────────────────
 .book-brand img {
-  border-radius: 8px;
+  border-radius: var(--r-2);
 }
 
 .book-menu {
-  background: #E8E1D0;
+  background: var(--tf-parchment-deep);
+  border-right: 1px solid var(--rule-faint);
+
   nav {
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+
     a {
-      color: #2C2A24;
+      color: var(--fg-soft);
     }
     a.active {
-      color: #2F7B7B;
+      color: var(--tf-moss);
+      font-weight: 600;
     }
     a:hover {
-      color: #2F7B7B;
+      color: var(--fg);
     }
   }
 }
 
+// ── Sidebar divider between top links and content pages ─
+.book-menu nav > ul:first-of-type {
+  padding-bottom: var(--s-4);
+  margin-bottom: var(--s-4);
+  border-bottom: 1px solid var(--rule-faint);
+}
+
+// ── Quick links block on landing page ────────────────────
+.tf-quick-links {
+  margin-top: var(--s-6);
+  margin-bottom: var(--s-6);
+}
+
+// ── Header ──────────────────────────────────────────────
+.book-header {
+  border-bottom: 1px solid var(--rule-faint);
+}
+
+// ── Content ─────────────────────────────────────────────
 .markdown {
+  font-family: var(--font-body);
+  line-height: 1.65;
+
   a {
-    color: #2F7B7B;
+    color: var(--tf-moss);
     text-decoration: underline;
-    text-underline-offset: 2px;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+
     &:hover {
-      color: #1F5959;
+      color: var(--fg);
+      text-decoration-thickness: 2px;
     }
   }
 
   table th {
-    background-color: #D4CDBB;
-    color: #1B1A16;
+    background-color: var(--tf-parchment-deep);
+    color: var(--fg);
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  table td {
+    border-color: var(--rule-faint);
+  }
+
+  table tr:nth-child(2n) {
+    background: var(--tf-bone);
   }
 
   blockquote {
-    border-left: 4px solid #2F7B7B;
-    background: #D4CDBB;
-    padding: 0.5em 1em;
+    border-left: 3px solid var(--tf-moss);
+    background: var(--tf-bone);
+    padding: var(--s-4) var(--s-5);
+    font-style: italic;
   }
 
   hr {
-    border-color: #B8AE9A;
+    border: none;
+    border-top: 1px solid var(--rule-soft);
+  }
+
+  code {
+    font-size: 0.8125rem;
+    background: var(--tf-parchment-deep);
+    border-radius: var(--r-1);
+    padding: 2px 6px;
+  }
+
+  pre {
+    background: var(--tf-ink) !important;
+    border-radius: var(--r-2);
+
+    code {
+      background: none;
+      padding: 0;
+      color: var(--fg-inverse);
+    }
+  }
+
+  img {
+    border-radius: var(--r-1);
+    border: 1px solid var(--rule-faint);
   }
 }
 
-.book-header {
-  border-bottom: 1px solid #B8AE9A;
-}
-
-.book-menu {
-  border-right: 1px solid #B8AE9A;
-}
-
-.book-hint.info {
-  border-color: #2F7B7B;
-  background: #E8E1D0;
-}
-
+// ── Search ──────────────────────────────────────────────
 .book-search input {
-  background: #D4CDBB;
-  border-color: #B8AE9A;
-  color: #1B1A16;
+  font-family: var(--font-sans);
+  background: var(--tf-bone);
+  border: 1px solid var(--rule-soft);
+  border-radius: var(--r-2);
+  color: var(--fg);
+
+  &::placeholder {
+    color: var(--fg-quiet);
+  }
+
+  &:focus {
+    border-color: var(--tf-moss);
+    outline: 2px solid var(--tf-moss);
+    outline-offset: 1px;
+  }
+}
+
+// ── Hint shortcodes ─────────────────────────────────────
+.book-hint.info {
+  border-color: var(--tf-pond);
+  background: var(--tf-bone);
+}
+.book-hint.warning {
+  border-color: var(--tf-goldenrod);
+  background: var(--tf-bone);
+}
+.book-hint.danger {
+  border-color: var(--tf-brick);
+  background: var(--tf-bone);
+}
+
+// ── Footer ──────────────────────────────────────────────
+.book-footer {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  color: var(--fg-muted);
+  border-top: 1px solid var(--rule-faint);
+}
+
+.book-copyright {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fg-quiet);
+}
+
+// ── Dark mode — ink-based, not Nord ─────────────────────
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-background: var(--tf-ink);
+    --body-font-color: var(--tf-parchment);
+    --bg:          var(--tf-ink);
+    --bg-raised:   var(--tf-barnwood);
+    --bg-hero:     #252420;
+    --fg:          var(--tf-parchment);
+    --fg-soft:     var(--tf-stone);
+    --fg-muted:    var(--tf-stone-light);
+    --fg-quiet:    #{rgba(#F2EAD8, 0.4)};
+    --rule-soft:   #{rgba(#F2EAD8, 0.2)};
+    --rule-faint:  #{rgba(#F2EAD8, 0.1)};
+    --color-link: var(--tf-sage);
+    --color-visited-link: var(--tf-pond-mist);
+
+    --icon-filter: brightness(0) invert(1);
+    --gray-100: #2a2820;
+    --gray-200: #3a3830;
+    --gray-500: var(--tf-stone);
+  }
+
+  html {
+    background: var(--tf-ink);
+  }
+
+  .book-menu {
+    background: #222018;
+  }
+
+  .markdown {
+    a {
+      color: var(--tf-sage);
+      &:hover {
+        color: var(--tf-parchment);
+      }
+    }
+
+    table th {
+      background-color: var(--tf-barnwood);
+      color: var(--tf-parchment);
+    }
+
+    table tr:nth-child(2n) {
+      background: #252420;
+    }
+
+    blockquote {
+      background: #252420;
+      border-left-color: var(--tf-sage);
+    }
+
+    code {
+      background: #2a2820;
+    }
+
+    img {
+      border-color: #{rgba(#F2EAD8, 0.1)};
+    }
+  }
+
+  .book-search input {
+    background: #2a2820;
+    border-color: #{rgba(#F2EAD8, 0.15)};
+    color: var(--tf-parchment);
+
+    &::placeholder {
+      color: var(--tf-stone);
+    }
+
+    &:focus {
+      border-color: var(--tf-sage);
+      outline-color: var(--tf-sage);
+    }
+  }
+
+  .book-hint.info,
+  .book-hint.warning,
+  .book-hint.danger {
+    background: #252420;
+  }
 }
