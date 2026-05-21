@@ -14,19 +14,19 @@ The Farmhouse runs its own internet radio stations -- continuous music you can l
 
 ### Farmhouse Radio
 
-The full Farmhouse music library, start to finish -- everything on the server, unfiltered.
+NSFW or Kids. This is all of the music available on the farmhouse server!
 
 **Listen:** [radio.tyhurstfarmhouse.com/public/farmhouse-radio](https://radio.tyhurstfarmhouse.com/public/farmhouse-radio)
 
 ### Freedom Radio
 
-Upbeat party music -- good for hanging out with friends.
+Only bangers! A party playlist radio station for when you are drinking beers and hanging out with buds!
 
 **Listen:** [radio.tyhurstfarmhouse.com/public/freedom-radio](https://radio.tyhurstfarmhouse.com/public/freedom-radio)
 
 ### Sonic Temple
 
-A playlist built around the Sonic Temple festival (Columbus, 2026).
+All of the bands on the Sunday of Sonic Temple 2026 in Columbus.
 
 **Listen:** [radio.tyhurstfarmhouse.com/public/sonic_temple](https://radio.tyhurstfarmhouse.com/public/sonic_temple)
 

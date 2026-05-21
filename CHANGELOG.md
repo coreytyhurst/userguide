@@ -9,6 +9,22 @@ This changelog tracks changes to the *repository*. For server news aimed at user
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-05-21
+
+### Added
+
+- FAQ answers are now click-to-open collapsible sections (twisties).
+- Projects page links to Ruthie, the dinner decider.
+
+### Changed
+
+- Updated the three radio station descriptions.
+
+### Fixed
+
+- `details` collapsibles rendered their inner markdown literally (e.g. visible
+  backticks); they now render formatted content.
+
 ## [1.0.0] - 2026-05-21
 
 ### Changed
@@ -41,7 +57,8 @@ This changelog tracks changes to the *repository*. For server news aimed at user
 
 - Refined the landing page layout and spacing.
 
-[Unreleased]: https://github.com/coreytyhurst/userguide/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/coreytyhurst/userguide/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/coreytyhurst/userguide/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/coreytyhurst/userguide/compare/v0.10.0...v1.0.0
 [0.10.0]: https://github.com/coreytyhurst/userguide/compare/v0.9.0...v0.10.0
 [0.9.0]: https://github.com/coreytyhurst/userguide/releases/tag/v0.9.0

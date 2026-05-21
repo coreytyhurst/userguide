@@ -240,6 +240,52 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--tf-bone);
 }
 
+// ── Collapsible details — FAQ twisties & inline expanders ─
+.markdown details {
+  margin: var(--s-3) 0;
+  border: 1px solid var(--rule-soft);
+  border-radius: var(--r-1);
+  background: var(--tf-bone);
+
+  > summary {
+    display: flex;
+    align-items: baseline;
+    gap: var(--s-3);
+    padding: var(--s-3) var(--s-4);
+    cursor: pointer;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    color: var(--fg);
+    list-style: none;
+
+    &::-webkit-details-marker { display: none; }
+
+    &::before {
+      content: "+";
+      color: var(--tf-moss);
+      font-weight: 700;
+      font-size: 1.15em;
+      line-height: 1;
+    }
+
+    &:hover { color: var(--tf-moss); }
+  }
+
+  &[open] > summary {
+    border-bottom: 1px solid var(--rule-faint);
+  }
+  &[open] > summary::before {
+    content: "\2212"; // minus sign
+  }
+
+  .markdown-inner {
+    padding: var(--s-3) var(--s-4);
+
+    > :first-child { margin-top: 0; }
+    > :last-child { margin-bottom: 0; }
+  }
+}
+
 // ── Footer ──────────────────────────────────────────────
 .book-footer {
   font-family: var(--font-sans);
@@ -307,6 +353,12 @@ h1, h2, h3, h4, h5, h6 {
     blockquote {
       background: #252420;
       border-left-color: var(--tf-sage);
+    }
+
+    details {
+      background: #252420;
+      summary::before { color: var(--tf-sage); }
+      summary:hover { color: var(--tf-parchment); }
     }
 
     code {

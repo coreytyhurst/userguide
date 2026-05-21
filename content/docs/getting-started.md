@@ -37,6 +37,6 @@ You won't do this every time -- only on a new device, or if it's been a while. I
 - **Bookmark the dashboard** so you can always find your way back.
 - **Check this guide first** if something isn't working. The [Troubleshooting]({{< relref "/docs/troubleshooting" >}}) page covers the most common fixes. Still stuck? The best way to reach Corey is email: [coreytyhurst@gmail.com](mailto:coreytyhurst@gmail.com).
 
-{{< details "Not sure which browser you're using?" >}}
+{{% details "Not sure which browser you're using?" %}}
 On a phone or tablet, the browser it came with is usually fine. On a computer, look for the **Chrome** icon (a colorful circle) or the **Edge** icon (a blue-green wave). Don't have Chrome? Download it free at [google.com/chrome](https://www.google.com/chrome/).
-{{< /details >}}
+{{% /details %}}

@@ -37,9 +37,9 @@ When any app asks for server details:
 - **Server:** `https://music.tyhurstfarmhouse.com`
 - **Username / Password:** Your Farmhouse username and password.
 
-{{< details "App won't connect?" >}}
+{{% details "App won't connect?" %}}
 Some Subsonic apps ask for an API path. Try `https://music.tyhurstfarmhouse.com` on its own first; if the app won't connect, add `/rest` to the end of the server address.
-{{< /details >}}
+{{% /details %}}
 
 ## Good to know
 
