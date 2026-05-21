@@ -1,0 +1,29 @@
+name: Build
+
+on:
+  pull_request:
+  push:
+    branches-ignore:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          # Keep in sync with .hugo-version
+          hugo-version: '0.161.1'
+          extended: true
+
+      - name: Build site
+        run: hugo --minify

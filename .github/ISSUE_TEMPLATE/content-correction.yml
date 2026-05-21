@@ -1,0 +1,27 @@
+name: Content correction
+description: Report something inaccurate or out of date in the guide.
+title: "[Correction]: "
+labels: ["correction"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Which page?
+      description: The guide page with the problem — a URL or the page title.
+      placeholder: e.g. guide.tyhurstfarmhouse.com/docs/music/
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong?
+      description: Describe the inaccurate or outdated information.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction
+      description: What should it say instead? (Optional)
+    validations:
+      required: false
