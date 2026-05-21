@@ -16,8 +16,8 @@ You're looking at it! This guide has been rebuilt from scratch to be easier to n
 
 ### May 2026 -- Freedom Radio is live
 
-The Farmhouse now has its own 24/7 internet radio station playing a curated mix of music from the library. Listen at [radio.tyhurstfarmhouse.com](https://radio.tyhurstfarmhouse.com).
+The Farmhouse now has its own 24/7 internet radio stations playing curated music from the library. Browse them on the [Radio]({{< relref "/docs/radio" >}}) page.
 
 ---
 
-*Older announcements will appear here as they're added.*
+*Check back here for service changes, new features, and planned maintenance.*

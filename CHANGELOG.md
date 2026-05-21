@@ -9,6 +9,16 @@ This changelog tracks changes to the *repository*. For server news aimed at user
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-05-21
+
+### Changed
+
+- Addressed a multi-persona UX evaluation of the guide: documented the Cloudflare
+  Access first-login flow, corrected the radio station URLs and listed all three
+  stations, fixed the Jellyfin login-screen description, clarified that Music uses
+  the standard Farmhouse login, added Retro Gaming save-state guidance, and named
+  each service's underlying software.
+
 ## [0.10.0] - 2026-05-21
 
 ### Added
@@ -31,6 +41,7 @@ This changelog tracks changes to the *repository*. For server news aimed at user
 
 - Refined the landing page layout and spacing.
 
-[Unreleased]: https://github.com/coreytyhurst/userguide/compare/v0.10.0...HEAD
+[Unreleased]: https://github.com/coreytyhurst/userguide/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/coreytyhurst/userguide/compare/v0.10.0...v1.0.0
 [0.10.0]: https://github.com/coreytyhurst/userguide/compare/v0.9.0...v0.10.0
 [0.9.0]: https://github.com/coreytyhurst/userguide/releases/tag/v0.9.0

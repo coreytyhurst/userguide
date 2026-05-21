@@ -30,8 +30,16 @@ This usually means the server is temporarily down for maintenance or updates. Wa
 ## Music app won't connect
 
 1. **Double-check the server address:** `https://music.tyhurstfarmhouse.com`
-2. **Make sure you're using your music account** (not your streaming login -- they're separate).
-3. **Try logging in through the web player first** to confirm your credentials work.
+2. **Try logging in through the web player first** to confirm your username and password work.
+3. **If an app still won't connect,** add `/rest` to the end of the server address -- some apps need it.
+
+## I never received the email code
+
+When an app's Cloudflare security screen sends you a login code:
+
+1. **Check your spam or junk folder.**
+2. **Make sure the email address is correct** -- it must be the one linked to your account.
+3. **Wait a minute and request a new code.** If it still doesn't arrive after a few tries, email Corey.
 
 ## I forgot my password
 

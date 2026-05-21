@@ -7,14 +7,16 @@ weight: 50
 
 ### How do I get an account?
 
-Ask Corey. He'll set you up with credentials for the apps you need access to.
+Email Corey at [coreytyhurst@gmail.com](mailto:coreytyhurst@gmail.com). He'll set you up with credentials for the apps you need access to.
 
 ### Do I need a separate login for each app?
 
-Most apps share the same login, but a few have their own accounts:
-- **Streaming (TV & Movies), Audiobooks, and Requesting Content** all use the same Jellyfin login.
-- **Music** has its own separate account.
-- **Freedom Radio** and **Retro Gaming** don't require a login at all.
+No -- almost everything uses the same username and password:
+- **TV & Movies, Audiobooks, Requesting Content, and Music** all use your Farmhouse login.
+- **Radio** and **Retro Gaming** don't require a login at all.
+- **D&D** is the only exception -- your DM gives you separate player credentials for it.
+
+If the Music app rejects your login, you may not have been added to it yet -- email Corey.
 
 ### Can I access this from outside the house?
 
@@ -30,7 +32,12 @@ Please don't. If someone else wants access, have them reach out to Corey for the
 
 ### How do I change my password?
 
-For most apps, you can change your password in the app's settings or profile page. If you're having trouble, ask Corey to reset it.
+You can change it in the app's own settings. If you're having trouble, email Corey to reset it.
+
+{{< details "Where to find it in each app" >}}
+- **TV & Movies (Jellyfin):** click your user icon (top right) -> **Settings** -> **Password**.
+- **Music (Navidrome):** click your username (bottom left) -> **Personal Settings** -> **Password**.
+{{< /details >}}
 
 ### Why is something buffering or slow?
 
@@ -39,6 +46,10 @@ See [Troubleshooting]({{< relref "/docs/troubleshooting" >}}) for common fixes. 
 ### How do I request a movie or TV show?
 
 Use the [request app]({{< relref "/docs/requesting-content" >}}). It's separate from the streaming app.
+
+### Why am I asked for a code sent to my email?
+
+Most apps show a Cloudflare security screen before their own login. Enter the email address linked to your account, click **Send Code**, and check your inbox for a 6-digit code. This appears the first time on each device. See [Your first login]({{< relref "/docs/getting-started#your-first-login" >}}) for details. If the email doesn't arrive, check your spam folder.
 
 ### The site says my connection isn't secure.
 

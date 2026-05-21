@@ -9,6 +9,9 @@ Listen to audiobooks and podcasts from the Farmhouse server.
 
 **Open the app:** [books.tyhurstfarmhouse.com](https://books.tyhurstfarmhouse.com)
 
+> [!NOTE]
+> **First time on this device?** You'll see a Cloudflare security screen before the login -- enter your email and the 6-digit code it sends you. See [Your first login]({{< relref "/docs/getting-started#your-first-login" >}}).
+
 ## On your computer
 
 1. Go to [books.tyhurstfarmhouse.com](https://books.tyhurstfarmhouse.com).

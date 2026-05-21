@@ -9,10 +9,13 @@ Stream music from the Farmhouse server. The library has a wide collection you ca
 
 **Open the app:** [music.tyhurstfarmhouse.com](https://music.tyhurstfarmhouse.com)
 
+> [!NOTE]
+> **First time on this device?** You'll see a Cloudflare security screen before the login -- enter your email and the 6-digit code it sends you. See [Your first login]({{< relref "/docs/getting-started#your-first-login" >}}).
+
 ## On your computer
 
 1. Go to [music.tyhurstfarmhouse.com](https://music.tyhurstfarmhouse.com).
-2. Log in with your **music account** (this is separate from your streaming login -- ask Corey if you need one).
+2. Log in with your **Farmhouse username and password** -- the same login you use for the other apps. If it doesn't work, you may not have been added to the music app yet; email Corey.
 3. Browse by artist, album, genre, or use the search bar.
 
 ## On your phone
@@ -32,7 +35,11 @@ The web player works on mobile, but dedicated apps give a better experience. The
 
 When any app asks for server details:
 - **Server:** `https://music.tyhurstfarmhouse.com`
-- **Username / Password:** Your music account credentials (not your streaming login).
+- **Username / Password:** Your Farmhouse username and password.
+
+{{< details "App won't connect?" >}}
+Some Subsonic apps ask for an API path. Try `https://music.tyhurstfarmhouse.com` on its own first; if the app won't connect, add `/rest` to the end of the server address.
+{{< /details >}}
 
 ## Good to know
 

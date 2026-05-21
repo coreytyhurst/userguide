@@ -5,9 +5,12 @@ weight: 15
 
 # Requesting Content
 
-Want to watch something that isn't in the library? You can request it, and it'll usually show up within a few hours.
+Want to watch something that isn't in the library? You can request it through **Seer**, the Farmhouse request app, and it'll usually show up within a few hours.
 
 **Open the app:** [request.tyhurstfarmhouse.com](https://request.tyhurstfarmhouse.com)
+
+> [!NOTE]
+> **First time on this device?** You'll see a Cloudflare security screen before the login -- enter your email and the 6-digit code it sends you. See [Your first login]({{< relref "/docs/getting-started#your-first-login" >}}).
 
 ## How to request
 

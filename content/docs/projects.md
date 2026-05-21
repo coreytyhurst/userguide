@@ -12,8 +12,9 @@ case you find it interesting.
 
 **Visit:** [baklor.tyhurstfarmhouse.com](https://baklor.tyhurstfarmhouse.com)
 
-Lore, world information, and campaign resources for the Farmhouse D&D group. If you play in
-a campaign, this is where the world is documented.
+A companion site for the Farmhouse D&D group -- lore, maps, world history, and campaign
+resources. If you play in a campaign it's where the world is documented, and even if you
+don't, it's a fun look at what the group has built.
 
 <!--
 TODO: Add more projects below. Copy this pattern for each one:
