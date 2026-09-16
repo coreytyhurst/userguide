@@ -8,7 +8,7 @@ weight: 50
 Click any question to see the answer.
 
 {{% details "How do I get an account?" %}}
-Email Corey at [coreytyhurst@gmail.com](mailto:coreytyhurst@gmail.com). He'll set you up with credentials for the apps you need access to.
+Message Corey directly. He'll set you up with credentials for the apps you need access to.
 {{% /details %}}
 
 {{% details "Do I need a separate login for each app?" %}}
