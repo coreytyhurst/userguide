@@ -5,11 +5,11 @@ weight: 5
 
 # Getting Started
 
-Welcome! The Farmhouse server hosts a bunch of apps for watching movies, listening to music, playing games, and more. Everything runs from our home server and is available to family and friends.
+Welcome! The Farmhouse server hosts a bunch of apps for watching movies, listening to music, playing games, and more. Everything is self-hosted and available to family and friends.
 
 ## What you need
 
-- **An account.** You should have received a username and password from Corey. If you haven't, email him at [coreytyhurst@gmail.com](mailto:coreytyhurst@gmail.com).
+- **An account.** You should have received a username and password from Corey. If you haven't, message Corey directly (text, Signal, or however you usually reach him).
 - **A device.** Any phone, tablet, computer, or smart TV will work for most apps.
 - **An internet connection.** Everything works over the internet, whether you're at the farmhouse or anywhere else.
 
@@ -35,7 +35,7 @@ You won't do this every time -- only on a new device, or if it's been a while. I
 
 - **Use Chrome or Edge** for the best experience on a computer. Safari works but occasionally has quirks.
 - **Bookmark the dashboard** so you can always find your way back.
-- **Check this guide first** if something isn't working. The [Troubleshooting]({{< relref "/docs/troubleshooting" >}}) page covers the most common fixes. Still stuck? The best way to reach Corey is email: [coreytyhurst@gmail.com](mailto:coreytyhurst@gmail.com).
+- **Check this guide first** if something isn't working. The [Troubleshooting]({{< relref "/docs/troubleshooting" >}}) page covers the most common fixes. Still stuck? Message Corey directly.
 
 {{% details "Not sure which browser you're using?" %}}
 On a phone or tablet, the browser it came with is usually fine. On a computer, look for the **Chrome** icon (a colorful circle) or the **Edge** icon (a blue-green wave). Don't have Chrome? Download it free at [google.com/chrome](https://www.google.com/chrome/).

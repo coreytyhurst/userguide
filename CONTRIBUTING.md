@@ -13,7 +13,7 @@ or missing, the easiest path is to
 - **Content suggestion** — a new page or section would help.
 
 For account requests, login problems, or server issues, email the admin directly at
-**coreytyhurst@gmail.com** — don't file a public issue for those.
+message Corey directly. Don't file a public issue for those.
 
 ## Editing content
 

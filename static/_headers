@@ -1,0 +1,6 @@
+# Cloudflare Pages headers. The pages.dev hostname is an unbranded twin of
+# guide.tyhurstfarmhouse.com; keep it out of search engines.
+https://userguide.pages.dev/*
+  X-Robots-Tag: noindex, nofollow
+https://*.userguide.pages.dev/*
+  X-Robots-Tag: noindex, nofollow

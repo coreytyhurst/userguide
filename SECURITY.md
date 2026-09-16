@@ -15,6 +15,6 @@ If your concern is about the **Farmhouse server itself** — a suspected account
 a login that isn't working as expected, or anything that feels unsafe — **do not open a
 public issue.** Contact the admin privately:
 
-**coreytyhurst@gmail.com**
+the repository's private vulnerability reporting form (Security tab, "Report a vulnerability"), or message Corey directly
 
 Please include enough detail to understand and reproduce the concern.
